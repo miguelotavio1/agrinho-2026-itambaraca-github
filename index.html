@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Sustentabilidade no Agro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🌾 Agrinho 2026</div>
+            <div class="nav-controls">
+                <button id="fontSizeBtn" class="control-btn" title="Ajustar tamanho da fonte">
+                    <span class="font-size-icon">A</span>
+                </button>
+                <button id="darkModeBtn" class="control-btn" title="Modo escuro">
+                    🌙
+                </button>
+                <button id="scrollTopBtn" class="control-btn scroll-top-btn" title="Voltar ao topo">
+                    ↑
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Font Size Control Modal -->
+    <div id="fontSizeModal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h3>Ajustar Tamanho da Fonte</h3>
+            <div class="font-size-controls">
+                <button class="font-btn" data-size="14">Pequeno</button>
+                <button class="font-btn active" data-size="16">Normal</button>
+                <button class="font-btn" data-size="18">Grande</button>
+                <button class="font-btn" data-size="20">Muito Grande</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Hero -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Agro Forte e Sustentável</h1>
+            <p class="hero-subtitle">Descubra como a sustentabilidade transforma a agricultura moderna</p>
+            <button class="cta-btn" onclick="scrollToSection('objectives')">Conhecer Mais</button>
+        </div>
+        <div class="hero-animation">
+            <div class="floating-leaf leaf1">🌿</div>
+            <div class="floating-leaf leaf2">🌾</div>
+            <div class="floating-leaf leaf3">🍃</div>
+        </div>
+    </header>
+
+    <!-- Objectives Section -->
+    <section id="objectives" class="objectives">
+        <div class="container">
+            <h2>Nossos Objetivos</h2>
+            <p class="section-subtitle">Conheça as metas do projeto Agrinho 2026</p>
+            
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Conscientização</h3>
+                    <p>Promover a consciência ambiental no setor agrícola e disseminar práticas sustentáveis</p>
+                </div>
+
+                <div class="objective-card">
+                    <div class="card-icon">🌱</div>
+                    <h3>Inovação</h3>
+                    <p>Incentivar o uso de tecnologias modernas e sustentáveis na agricultura</p>
+                </div>
+
+                <div class="objective-card">
+                    <div class="card-icon">🤝</div>
+                    <h3>Comunidade</h3>
+                    <p>Fortalecer a comunidade agrícola através do compartilhamento de conhecimento</p>
+                </div>
+
+                <div class="objective-card">
+                    <div class="card-icon">🌍</div>
+                    <h3>Sustentabilidade</h3>
+                    <p>Garantir a preservação do meio ambiente para futuras gerações</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agro Cards Section -->
+    <section class="agro-cards">
+        <div class="container">
+            <h2>Agro em Foco</h2>
+            <p class="section-subtitle">Práticas essenciais para um agro sustentável</p>
+
+            <div class="cards-grid">
+                <div class="card card-1">
+                    <div class="card-front">
+                        <h3>🌾 Plantio Rotativo</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Alternância de culturas para melhorar a saúde do solo e reduzir pragas naturalmente.</p>
+                    </div>
+                </div>
+
+                <div class="card card-2">
+                    <div class="card-front">
+                        <h3>💧 Irrigação Eficiente</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Sistemas de irrigação inteligentes que reduzem o desperdício de água até 50%.</p>
+                    </div>
+                </div>
+
+                <div class="card card-3">
+                    <div class="card-front">
+                        <h3>🔄 Compostagem</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Transformação de resíduos em fertilizantes naturais para enriquecer o solo.</p>
+                    </div>
+                </div>
+
+                <div class="card card-4">
+                    <div class="card-front">
+                        <h3>🐝 Biodiversidade</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Preservação de polinizadores e fauna silvestre para equilíbrio ecológico.</p>
+                    </div>
+                </div>
+
+                <div class="card card-5">
+                    <div class="card-front">
+                        <h3>☀️ Energia Limpa</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Uso de energia solar e renovável nas propriedades agrícolas.</p>
+                    </div>
+                </div>
+
+                <div class="card card-6">
+                    <div class="card-front">
+                        <h3>🌳 Reflorestamento</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Plantio de árvores para recuperar áreas degradadas e aumentar captura de carbono.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section">
+        <div class="container">
+            <h2>Quiz: Sustentabilidade Agrícola</h2>
+            <p class="section-subtitle">Teste seus conhecimentos sobre sustentabilidade (Nível Fácil)</p>
+
+            <div class="quiz-container">
+                <div id="quiz" class="quiz-questions">
+                    <!-- Questions will be loaded here by JavaScript -->
+                </div>
+
+                <div id="quizResult" class="quiz-result hidden">
+                    <h3>Seus Resultados</h3>
+                    <div class="result-score" id="resultScore"></div>
+                    <p id="resultMessage"></p>
+                    <button class="cta-btn" onclick="restartQuiz()">Fazer o Quiz Novamente</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credits Section -->
+    <footer class="credits">
+        <div class="container">
+            <div class="credits-content">
+                <h3>Créditos</h3>
+                
+                <div class="credits-grid">
+                    <div class="credit-item">
+                        <h4>Aluno</h4>
+                        <p>Miguel Otávio Ribeiro</p>
+                    </div>
+                    
+                    <div class="credit-item">
+                        <h4>Professor Orientador</h4>
+                        <p>Guilherme Cordeiro</p>
+                    </div>
+
+                    <div class="credit-item">
+                        <h4>Projeto</h4>
+                        <p>Agrinho 2026 - Itambaracá</p>
+                    </div>
+                </div>
+
+                <div class="footer-info">
+                    <p>&copy; 2026 Agrinho - Trabalho de Sustentabilidade Agrícola</p>
+                    <p>Desenvolvido com ❤️ para um futuro mais sustentável</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
