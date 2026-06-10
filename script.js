@@ -100,7 +100,7 @@ darkModeBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     const isDarkMode = document.body.classList.contains('dark-mode');
     localStorage.setItem('darkMode', isDarkMode);
-    darkModeBtn.textContent = isDarkMode ? '��️' : '🌙';
+    darkModeBtn.textContent = isDarkMode ? '☀️' : '🌙';
 });
 
 // Font Size Control
